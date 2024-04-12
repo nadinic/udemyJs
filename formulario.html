@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Dom Eventos Y Funciones</title>
+    <script src="js/32-ejeDom.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 150px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+        }
+    </style>
+</head>
+<body>
+<h1>Ejercicio Dom Y Eventos Y Funciones Curso js</h1>
+
+<div class="formulario">
+    <form action="#" method="POST" id="formulario" onsubmit="return false">
+        <table border="1px" style="display: flex;  justify-content: center;"> 
+            <tr>
+                <td><label for="">Nombre</label></td>
+                <td><input type="text" name="nombre" id="nombre">
+                    <span id="errorNombre" style="color: red;"></span></td>
+                
+            </tr>
+            
+            <tr>
+                <td><label for="">Apellido</label></td>
+                <td><input type="text" name="apellido" id="apellido">
+                    <span id="errorApellido" style="color: red;"></span></td>
+            </tr>
+            <tr>
+                <td><label for="">Edad</label></td>
+                <td><input type="number" name="edad" id="edad">
+                    <span id="errorEdad" style="color: red;"></span></td>
+            </tr>
+            <tr>
+                <td><label for="">Enviar</label></td>
+                <td><button >Submit</button></td>
+            </tr>
+        </table>
+    </form>    
+</div>
+
+<div class="bos dashed">
+
+    <h3>informacion del usuario</h3>
+    <hr>
+    <p id="p_nombre">
+        Nombre: <span></span>
+    </p>
+    <p id="p_apellido">
+        apellido: <span></span>
+    </p>
+    <p id="p_edad">
+        edad: <span></span>
+    </p>
+
+</div>
+
+
+  
+    
+</body>
+</html>
